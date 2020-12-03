@@ -1,0 +1,5 @@
+2020-11-11 17:21:15.328 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-11 17:21:15.411 WARN [main][JakartaCommonsLoggingImpl.java:64] - Property 'mapperLocations' was specified but matching resources are not found.
+2020-11-11 17:21:15.413 WARN [main][JakartaCommonsLoggingImpl.java:64] - No MyBatis mapper was found in '[com.wang]' package. Please check your configuration.
+2020-11-11 17:21:15.440 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@50194e8d, started on Wed Nov 11 17:21:15 CST 2020
+2020-11-11 17:21:15.441 INFO [main][BaseTest.java:49] - ==销毁==

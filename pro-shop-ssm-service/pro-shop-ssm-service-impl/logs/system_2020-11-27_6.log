@@ -1,0 +1,9 @@
+2020-11-27 20:20:42.394 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 
+2020-11-27 20:20:42.437 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-27 20:20:42.437 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: select * from a_managers order by lastLoginTime desc LIMIT ?
+2020-11-27 20:20:42.438 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 5(Integer)
+2020-11-27 20:20:42.441 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 2
+2020-11-27 20:20:42.445 INFO [main][UsersServiceTest.java:97] - 管理员;id:2,管理员名字:xx,name:1,status:2020-11-26 16:39:44,createTime:{}
+2020-11-27 20:20:42.446 INFO [main][UsersServiceTest.java:97] - 管理员;id:1,管理员名字:zz,name:1,status:2020-11-26 16:38:50,createTime:{}
+2020-11-27 20:20:42.447 INFO [main][UsersServiceTest.java:100] - 分页信息:总条数:2,总页数:1,当前页:1,每页多少条:5
+2020-11-27 20:20:42.448 INFO [main][BaseTest.java:49] - ==销毁==

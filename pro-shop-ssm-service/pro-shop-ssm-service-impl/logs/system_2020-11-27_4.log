@@ -1,0 +1,9 @@
+2020-11-27 20:10:48.279 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-27 20:20:35.525 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@12f9af83, started on Fri Nov 27 20:20:33 GMT+08:00 2020
+2020-11-27 20:20:41.933 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: SELECT count(0) FROM a_users
+2020-11-27 20:20:41.961 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 
+2020-11-27 20:20:41.986 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-27 20:20:41.991 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: select * from a_users order by lastLoginTime desc LIMIT ?
+2020-11-27 20:20:41.992 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 5(Integer)
+2020-11-27 20:20:41.999 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 5
+2020-11-27 20:20:42.005 INFO [main][UsersServiceTest.java:59] - 名字;id:5,username:江雨飞,email:zxcvn@uiowa.edu,status:1,createTime:2020-11-27 17:43:36

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    xml:配置文件;
+    要求:只要有一个根标签;
+       标签:三要素,标签名,属性,开始标签和结束标签的内容;(随便写)
+    dtd:
+        规定我们的标签名,属性,开始标签和结束标签中间的内容不能随便写
+ -->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--
+    jar包里面的代码就是封装;(把重复的代码封装到一个方法中);Mybatis:封装的就是Jdbc;
+    配置文件:是把代码的公共部分(经常修改的内容放到配置文件中);jdbc:数据源
+-->
+<configuration>
+    <!-- 全局设置 -->
+    <settings>
+        <!-- 延迟加载开关 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 按城加载 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <!-- 配置插件 -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 配置参数 -->
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+
+    <!-- 要引入所有的Mapper文件（映射） -->
+    <!--<mappers>
+        <mapper resource="com/wang/demo/dao/*Mapper.xml"/>
+    </mappers>-->
+</configuration>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- status=debug 可以查看log4j的装配过程 -->
+<configuration status="off" monitorInterval="1800">
+    <appenders>
+        <!-- 定义控制台输出 -->
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n" />
+        </Console>
+
+        <!-- 系统打印日志
+            name:定义变量,名字不能重复;
+            fileName:将日志文件的内容也要输出到文件中;文件的路径
+            filePattern:如果一天一个文件,这个文件比较大,日志文件会切分多个文件;多个文件的命名规则;
+         -->
+        <RollingRandomAccessFile name="Outer"
+                                 fileName="logs/outer.log" filePattern="logs/outer_%d{yyyy-MM-dd}_%i.log">
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true" />
+                <SizeBasedTriggeringPolicy size="100M" />
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <!-- 外部打印日志 -->
+        <RollingRandomAccessFile name="System"
+                                 fileName="logs/system.log" filePattern="logs/system_%d{yyyy-MM-dd}_%i.log">
+            <!-- 在日志文件中的内容的格式 -->
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%file:%line] - %msg%n" />
+            <Policies>
+                <!-- 策略:1天一个日志文件 -->
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true" />
+                <!-- 怕一天的日志文件比较大;如1g;如果文件大于100m拆分;每一个文件100m -->
+                <SizeBasedTriggeringPolicy size="1kb" />
+            </Policies>
+        </RollingRandomAccessFile>
+    </appenders>
+    <loggers>
+        <!-- Root Logger
+            这里面有一个默认的分组;
+            loggers下面的name;
+            root下面木有name;表示默认
+
+            每一个标签中的levels不冲突,各自是各自的
+         -->
+        <root level="info">
+            <appender-ref ref="Console" />
+            <appender-ref ref="System" />
+        </root>
+
+        <!-- name为dao包在的包名 -->
+        <logger name="com.zhang.users.dao" level="debug"/>
+        <logger name="com.zhang.goods.dao" level="debug"/>
+        <logger name="com.zhang.admins.dao" level="debug"/>
+
+        <!-- 外部日志,分开日志,name为getLogger() -->
+        <logger name="SystemLog" level="info" additivity="false">
+            <appender-ref ref="Console" />
+            <appender-ref ref="System" />
+        </logger>
+
+        <!-- 外部日志,分开日志,name为getLogger() -->
+        <logger name="OuterLog" level="info" additivity="false">
+            <!-- 日志文件要输出到三个地方,控制台,系统文件,外部文件 -->
+            <appender-ref ref="Console" />
+            <appender-ref ref="System" />
+            <appender-ref ref="Outer" />
+        </logger>
+    </loggers>
+</configuration>

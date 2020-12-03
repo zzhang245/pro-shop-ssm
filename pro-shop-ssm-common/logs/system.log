@@ -1,0 +1,6 @@
+2020-11-11 03:33:20.348 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@243c4f91, started on Wed Nov 11 03:33:19 CST 2020
+2020-11-11 03:33:20.356 INFO [main][BaseTest.java:35] - ==测试类==
+2020-11-11 03:33:20.358 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-11 17:08:29.293 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@243c4f91, started on Wed Nov 11 17:08:28 CST 2020
+2020-11-11 17:08:29.301 INFO [main][BaseTest.java:35] - ==测试类==
+2020-11-11 17:08:29.302 INFO [main][BaseTest.java:49] - ==销毁==

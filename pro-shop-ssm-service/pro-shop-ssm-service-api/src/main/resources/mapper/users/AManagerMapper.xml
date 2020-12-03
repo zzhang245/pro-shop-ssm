@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 想不写dao的实现类,使用mapper代理
+    namespace必须为dao的包名+接口名
+    标签的id必须和方法名一样
+    parameterType必须和方法的形参类型一样
+    resultType:如果查询的是单条,那么返回的就是此类型;如果查询的是多条,返回的List里面放的就是这个ResultType指定的类型
+ -->
+<mapper namespace="com.zhang.users.dao.IAManagersDao">
+    <resultMap id="resultMap" type="com.zhang.users.pojo.AManagers">
+
+    </resultMap>
+
+    <!-- 插入一条记录 -->
+    <insert id="saveOne" parameterType="com.zhang.users.pojo.AManagers"
+            useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        insert into a_managers(username,email,password,balance,phone,sex,status,createTime,updateTime,lastLoginTime)
+        values
+        (#{username},#{email},#{password},#{balance},#{phone},#{sex},#{status},#{createTime},#{updateTime},#{lastLoginTime})
+    </insert>
+
+    <!-- 查询多条记录 -->
+    <select id="selectCondList" parameterType="map" resultMap="resultMap">
+        select * from a_managers
+        <where>
+            <!-- 按照关键字搜索 -->
+            <if test="keyword != null and keyword != ''">
+                and (username like #{keyword} or email like #{keyword})
+            </if>
+            <!-- 按照状态搜索 -->
+            <if test="status != null and status != ''">
+                and status = #{status}
+            </if>
+            <!-- 按照时间搜索 -->
+            <if test="stDate != null and edDate != null">
+                <![CDATA[
+                    and lastLoginTime >= #{stDate} and lastLoginTime < #{edDate}
+                ]]>
+            </if>
+        </where>
+
+        <!-- 把排序加上 -->
+        <choose>
+            <when test="orderBy == 'idDesc'">
+                order by id desc
+            </when>
+            <otherwise>
+                order by lastLoginTime desc
+            </otherwise>
+        </choose>
+    </select>
+
+    <!-- 查询一条记录 -->
+    <select id="selectOne" parameterType="map" resultMap="resultMap">
+        select * from a_managers
+        <where>
+            <!--  判断id -->
+            <if test="id != null and id != ''">
+                and id = #{id}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+        </where>
+        <!-- 肯定不会报错,只查询一条 -->
+        limit 1
+    </select>
+
+    <!-- 更新一条记录 -->
+    <update id="updateOne" parameterType="com.zhang.users.pojo.AManagers">
+        update a_managers
+        <set>
+            username=#{username},email=#{email},password=#{password},balance=#{balance},phone=#{phone},
+            sex=#{sex},status=#{status},createTime=#{createTime},updateTime=#{updateTime},lastLoginTime=#{lastLoginTime},
+        </set>
+
+        <!-- 条件 -->
+        <where>
+            id = #{id}
+        </where>
+    </update>
+
+    <!-- 删除记录 -->
+    <delete id="deleteBatch" parameterType="map">
+        delete from a_managers
+        <where>
+            <if test="id != null and id != ''">
+                and id = #{id}
+            </if>
+        </where>
+    </delete>
+
+    <!-- 关联字段调用 -->
+    <select id="selectRelaOne" resultType="com.zhang.users.pojo.AManagers">
+        select * from  a_managers where id = #{id}
+    </select>
+</mapper>

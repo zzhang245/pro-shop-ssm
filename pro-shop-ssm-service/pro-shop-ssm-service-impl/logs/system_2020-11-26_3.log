@@ -1,0 +1,9 @@
+2020-11-26 22:04:20.830 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-26 22:04:20.839 INFO [main][UsersServiceTest.java:58] - 分页信息:总条数:0,总页数:0,当前页:2,每页多少条:5
+2020-11-26 22:04:20.841 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-26 22:05:02.605 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@1ea9f6af, started on Thu Nov 26 22:05:01 GMT+08:00 2020
+2020-11-26 22:05:03.703 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: SELECT count(0) FROM a_goods
+2020-11-26 22:05:03.724 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 
+2020-11-26 22:05:03.761 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-26 22:05:03.764 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: select * from a_goods order by pubTime desc LIMIT ?
+2020-11-26 22:05:03.764 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 5(Integer)

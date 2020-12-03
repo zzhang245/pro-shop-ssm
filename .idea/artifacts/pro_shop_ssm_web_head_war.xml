@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pro-shop-ssm-web-head:war">
+    <output-path>$PROJECT_DIR$/pro-shop-ssm-web/pro-shop-ssm-web-head/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>pro-shop-ssm-web-head</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="pro-shop-ssm-web-head-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="pro-shop-ssm-web-head:war exploded" />
+    </root>
+  </artifact>
+</component>

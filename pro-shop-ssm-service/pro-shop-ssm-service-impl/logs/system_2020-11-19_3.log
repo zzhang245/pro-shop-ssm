@@ -1,0 +1,3 @@
+2020-11-19 17:55:35.786 INFO [main][GoodsServiceTest.java:99] - 商品;id:9,分类名字:测试商品,name:1,status:2020-11-19 17:21:07,createTime:{}
+2020-11-19 17:55:35.792 INFO [main][GoodsServiceTest.java:102] - 分页信息:总条数:1,总页数:1,当前页:1,每页多少条:5
+2020-11-19 17:55:35.795 INFO [main][BaseTest.java:49] - ==销毁==

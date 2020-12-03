@@ -1,0 +1,9 @@
+2020-11-19 15:25:56.653 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-19 15:28:38.182 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@50eac852, started on Thu Nov 19 15:28:36 GMT+08:00 2020
+2020-11-19 15:28:39.487 INFO [main][GoodsServiceTest.java:101] - 分页信息:总条数:0,总页数:0,当前页:1,每页多少条:5
+2020-11-19 15:28:39.488 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-19 17:27:44.501 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@50eac852, started on Thu Nov 19 17:27:43 GMT+08:00 2020
+2020-11-19 17:27:45.848 INFO [main][GoodsServiceTest.java:99] - 商品;id:9,分类名字:测试商品,name:1,status:2020-11-19 17:21:07,createTime:{}
+2020-11-19 17:27:45.849 INFO [main][GoodsServiceTest.java:102] - 分页信息:总条数:1,总页数:1,当前页:1,每页多少条:5
+2020-11-19 17:27:45.853 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-19 17:55:34.557 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@50eac852, started on Thu Nov 19 17:55:33 GMT+08:00 2020

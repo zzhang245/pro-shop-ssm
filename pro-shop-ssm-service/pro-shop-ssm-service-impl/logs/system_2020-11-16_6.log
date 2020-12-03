@@ -1,0 +1,7 @@
+2020-11-16 18:03:48.292 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: %大%(String), %大%(String), 2020-10-16 18:03:46.585(Timestamp), 2020-11-16 18:03:46.585(Timestamp)
+2020-11-16 18:03:48.382 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-16 18:07:06.016 INFO [main][UsersServiceTest.java:22] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@1ea9f6af, started on Mon Nov 16 18:07:04 CST 2020
+2020-11-16 18:07:07.670 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: SELECT count(0) FROM a_admins WHERE (name LIKE ? OR email LIKE ?) AND lastLoginTime >= ? AND lastLoginTime < ?
+2020-11-16 18:07:07.697 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: %大%(String), %大%(String), 2020-10-16 18:07:06.024(Timestamp), 2020-11-16 18:07:06.024(Timestamp)
+2020-11-16 18:07:07.723 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-16 18:07:07.727 INFO [main][UsersServiceTest.java:58] - 分页信息:总条数:0,总页数:0,当前页:2,每页多少条:5

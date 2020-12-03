@@ -1,0 +1,8 @@
+2020-11-27 20:20:42.005 INFO [main][UsersServiceTest.java:59] - 名字;id:4,username:王子恒,email:khjha@uiowa.edu,status:1,createTime:2020-11-27 17:42:38
+2020-11-27 20:20:42.023 INFO [main][UsersServiceTest.java:59] - 名字;id:3,username:小李子,email:asdas@uiowa.edu,status:1,createTime:2020-11-27 17:41:24
+2020-11-27 20:20:42.023 INFO [main][UsersServiceTest.java:59] - 名字;id:2,username:奇奇,email:asdf@uiowa.edu,status:1,createTime:2020-11-26 16:39:44
+2020-11-27 20:20:42.024 INFO [main][UsersServiceTest.java:59] - 名字;id:1,username:浩浩,email:qwert@uiowa.edu,status:1,createTime:2020-11-26 16:38:50
+2020-11-27 20:20:42.024 INFO [main][UsersServiceTest.java:62] - 分页信息:总条数:5,总页数:1,当前页:1,每页多少条:5
+2020-11-27 20:20:42.026 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-27 20:20:42.349 INFO [main][BaseTest.java:26] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@2ee48610, started on Fri Nov 27 20:20:42 GMT+08:00 2020
+2020-11-27 20:20:42.393 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: SELECT count(0) FROM a_managers

@@ -1,0 +1,8 @@
+2020-11-26 21:59:18.986 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-26 21:59:46.380 INFO [main][UsersServiceTest.java:22] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@1ea9f6af, started on Thu Nov 26 21:59:45 GMT+08:00 2020
+2020-11-26 21:59:47.509 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: SELECT count(0) FROM a_users WHERE (username LIKE ? OR email LIKE ?)
+2020-11-26 21:59:47.531 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: %1%(String), %1%(String)
+2020-11-26 21:59:47.550 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-26 21:59:47.554 INFO [main][UsersServiceTest.java:58] - 分页信息:总条数:0,总页数:0,当前页:2,每页多少条:5
+2020-11-26 21:59:47.564 INFO [main][BaseTest.java:49] - ==销毁==
+2020-11-26 22:03:10.679 INFO [main][UsersServiceTest.java:22] - ==初始化==ac:org.springframework.context.support.ClassPathXmlApplicationContext@1ea9f6af, started on Thu Nov 26 22:03:09 GMT+08:00 2020

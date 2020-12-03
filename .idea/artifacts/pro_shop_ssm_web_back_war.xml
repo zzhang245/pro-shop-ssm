@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pro-shop-ssm-web-back:war">
+    <output-path>$PROJECT_DIR$/pro-shop-ssm-web/pro-shop-ssm-web-back/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>pro-shop-ssm-web-back</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="proj-shop-ssm-web-back-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="pro-shop-ssm-web-back:war exploded" />
+    </root>
+  </artifact>
+</component>

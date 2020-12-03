@@ -1,0 +1,8 @@
+2020-11-27 20:35:56.986 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 5
+2020-11-27 20:35:57.007 INFO [main][UsersServiceTest.java:59] - 名字;id:5,username:江雨飞,email:zxcvn@uiowa.edu,status:1,createTime:2020-11-27 17:43:36
+2020-11-27 20:35:57.008 INFO [main][UsersServiceTest.java:59] - 名字;id:4,username:王子恒,email:khjha@uiowa.edu,status:1,createTime:2020-11-27 17:42:38
+2020-11-27 20:35:57.008 INFO [main][UsersServiceTest.java:59] - 名字;id:3,username:小李子,email:asdas@uiowa.edu,status:1,createTime:2020-11-27 17:41:24
+2020-11-27 20:35:57.008 INFO [main][UsersServiceTest.java:59] - 名字;id:2,username:奇奇,email:asdf@uiowa.edu,status:1,createTime:2020-11-26 16:39:44
+2020-11-27 20:35:57.009 INFO [main][UsersServiceTest.java:59] - 名字;id:1,username:浩浩,email:qwert@uiowa.edu,status:1,createTime:2020-11-26 16:38:50
+2020-11-27 20:35:57.009 INFO [main][UsersServiceTest.java:62] - 分页信息:总条数:5,总页数:1,当前页:1,每页多少条:5
+2020-11-27 20:35:57.013 INFO [main][BaseTest.java:49] - ==销毁==

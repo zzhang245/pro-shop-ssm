@@ -1,0 +1,9 @@
+2020-11-26 22:05:03.830 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 4
+2020-11-26 22:05:03.852 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: select * from a_cate where id = ?
+2020-11-26 22:05:03.852 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 9(Integer)
+2020-11-26 22:05:03.855 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-26 22:05:03.856 INFO [main][GoodsServiceTest.java:99] - 商品;id:12,分类名字:服装商品,name:1,status:2020-11-20 15:39:52,createTime:{}
+2020-11-26 22:05:03.868 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==>  Preparing: select * from a_cate where id = ?
+2020-11-26 22:05:03.868 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - ==> Parameters: 9(Integer)
+2020-11-26 22:05:03.870 DEBUG [main][JakartaCommonsLoggingImpl.java:54] - <==      Total: 1
+2020-11-26 22:05:03.871 INFO [main][GoodsServiceTest.java:99] - 商品;id:10,分类名字:商品经济,name:1,status:2020-11-19 18:24:51,createTime:{}
